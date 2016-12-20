@@ -23,3 +23,39 @@ class Solution:
     		curr = curr.right
 
     	return inorder
+
+
+    def preorder(self, A):
+    	op = []
+    	s = []
+    	curr = A
+    	while (s or curr):
+    		while(curr):
+    			op.append(curr)
+    			s.append(curr)
+    			curr = curr.left
+    		curr = s.pop()
+    		curr = curr.right
+	    return op
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
